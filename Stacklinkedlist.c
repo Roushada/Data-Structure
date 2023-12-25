@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node{
 int data;
 struct Node*next;
@@ -21,7 +20,6 @@ struct Node*temp=top;
 top=top->next;
 free(temp);
 }
-
 void display()
 {
 if (top==NULL){
@@ -36,7 +34,6 @@ temp=temp->next;
 }
 printf("\n");
 }
-
 void search()
 {
 struct Node*temp;
@@ -57,7 +54,6 @@ else{
 }
 }
 }
-
 int main()
 {
 int ch,value;
